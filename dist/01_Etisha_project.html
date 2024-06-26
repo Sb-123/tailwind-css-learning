@@ -10,12 +10,12 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> 
 
     <title>Document</title>
   </head>
   <body class="bg-amber-50">
-    <div class="min-h-screen px-6 py-3 flex flex-col">
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-16 md:px-10 md:py-7 lg:px-16 ">
       <!-- header part is started here. -->
       <header class="flex justify-between">
         <div class="flex items-center justify-center gap-2">
@@ -26,7 +26,17 @@
             Hosterr is hiring!
           </button>
         </div>
-        <div>
+        <ul class="/*hidden*/ jflex justify-between items-center font-sans text-gray-400 gap-6 ">
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Find Domain</a></li>
+          <li><a href="#">Why Hosterr</a></li>
+        </ul>
+        <div class="hidden lg:flex justify-center items-center font-sans gap-6 ">
+          <a href="#" class="text-gray-400">Sign In</a>
+          <button class="btn">Join Waitlist</button>
+        </div>
+
+        <div class="lg:hidden ">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -37,33 +47,44 @@
       <!-- main part is started here. -->
       <main>
         <div class="flex items-center justify-center">
+          <!-- image 1st -->
           <img
             src="Assets/Blue Shape.svg"
             alt=""
-            class="h-64 -rotate-[45deg]"
+            class="h-64 -rotate-[45deg] md:h-72"
           />
+          <!-- image 2nd -->
           <img
             src="Assets/Pink Shape.svg"
             alt=""
-            class="absolute h-64 -rotate-[30deg]"
+            class="absolute h-64 -rotate-[30deg] md:h-72"
           />
+          <!-- image 3rd -->
           <img
             src="Assets/Purple Shape.svg"
             alt=""
-            class="absolute h-64 -rotate-[15deg]"
+            class="absolute h-64 -rotate-[15deg] md:h-72"
           />
-          <img src="Assets/Hero Image Model.png" alt="" class="absolute h-64" />
+          <!-- image 4th -->
+          <img src="Assets/Hero Image Model.png" alt="" class="absolute h-64 md:h-72" />
         </div>
-        <div>
+        <div class="space-y-4 mt-16">
           <h1 class="text-5xl font-bold leading-tight">
             Host your website in less than 5 minutes.
           </h1>
-          <p>
+          <p class="text-gray-400">
             With Hosterr, get your website up and running in no less than 5
             minutes with the most competitive pricing packages available online
           </p>
-          <input type="email" placeholder="Enter e-mail address" />
-          <button>Join Waitlist</button>
+          <form action="" class="flex flex-col gap-4 md:flex-row">
+            <input type="email" placeholder="Enter e-mail address" class="rounded-md px-4 py-3 placeholder:text-gray-400" />
+            <button class="bg-blue-500 rounded-md px-4 py-3 font-medium text-white font-serif ">Join Waitlist</button>
+
+          </form>
+          <div class="flex gap-2">
+            <img src="./Assets/Checkmark.svg" alt="">
+            <p class="font-sans text-gray-400">No spam, ever. Unsubscribe anytime.</p>
+          </div>
         </div>
       </main>
       <!-- main part is ended here. -->
@@ -72,7 +93,28 @@
         
 
       <!-- footer part is started here. -->
-      <footer></footer>
+      <footer class="flex flex-col gap-12̣‸md:flex-row md:justify-between‸">
+        <ul class="flex justify-start gap-21 font-sans text-gray-400">
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <img src="Assets/" alt="">
+          <div>
+            <p class="font-serif font-thin" >Have any question?</p>
+            <a href="#" class="font-sans font-bold">Talk to speaclist!</a>
+          </div>
+        </div>
+
+
+      </footer>
       <!-- footer part is ended here. -->
     </div>
   </body>
